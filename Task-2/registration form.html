@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-form">
+            <h1><u>Registration Form</u></h1>
+            <div class="row">
+                <div class="column">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="column">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="column">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="column">
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="column">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="country">Select Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="usa">Select</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="india">India</option>
+                        <!-- Add more countries here -->
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="imageFile">Upload Image:</label>
+                    <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+                </div>
+                
+            </div>
+            <div class="row1">
+                <input type="checkbox" id="acceptConditions" name="acceptConditions" required>
+                <label for="acceptConditions">I accept the terms and conditions</label>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button type="button" id="registerButton">Register</button>
+                </div>
+                <div class="column">
+                    <button type="button" id="clearHistoryButton">Clear Registration History</button>
+                </div>
+            </div>
+            <div class="login-option">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+        <div id="scrollable-div">
+            <div class="registration-history">
+                <h2><u>Registration History</u></h2>
+                <ul id="historyList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="registration form.js"></script>
+</body>
+</html>

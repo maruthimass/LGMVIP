@@ -1,0 +1,155 @@
+/* Reset some default styles */
+  body, ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  } 
+  .container {
+    max-width: 700px;
+    padding: 20px;
+    transform: translate(70vh,10vh);
+    border: 10px solid #ccc;
+    border-radius: 30px;
+    box-shadow: #ea1b0c;
+    color: rgb(31, 216, 216);
+    background-color: rgb(137, 158, 180);
+    border-color: #5e2110;
+  } 
+  .colorful-heading {
+    font-size: 60px;
+  } 
+  .word1 {
+    color: orangered;
+  } 
+  .word2 {
+    color: blue;
+  } 
+  .word3 {
+    color: green;
+  } 
+  .task-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  #task {
+    flex: 1;
+    padding: 8px;
+    font-size: 40px;
+    color: #ea1b0c;
+    background-color: rgb(244, 199, 207);
+    border: 5px solid;
+    border-color: #ea1b0c;
+    border-radius: 30px;
+  }
+  #task::placeholder{
+    color: blueviolet;
+    border-color: #ea1b0c;
+  }
+  
+  #addBtn, #clearBtn {
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #addBtn:hover, #clearBtn:hover {
+    background-color: purple;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .love-checkbox {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .hidden-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .love-symbol {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    position: absolute;
+    right: 10;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  
+  .love-symbol::before,
+  .love-symbol::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .love-symbol::before {
+    top: -10px;
+    left: 0;
+  }
+  
+  .love-symbol::after {
+    top: 0;
+    left: 10px;
+  }
+  
+  .love-checkbox:nth-child(even) .love-symbol {
+    background-color: pink;
+  }
+  
+  .love-checkbox input[type="checkbox"]:checked + .love-symbol {
+    background-color: rgb(193, 13, 166);
+  }
+  
+  .love-checkbox input[type="checkbox"]:checked + .love-symbol::before,
+  .love-checkbox input[type="checkbox"]:checked + .love-symbol::after {
+    background-color: green;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #123;
+    background-color: rgb(137, 158, 180);
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .deleteBtn {
+    padding: 6px 10px;
+    font-size: 30px;
+    background-color: #123;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .deleteBtn:hover {
+    background-color: orange;
+  }
